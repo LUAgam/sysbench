@@ -343,7 +343,7 @@ uint32_t sb_rand_unique(void)
 
 /* This is safe to be called concurrently from multiple threads */
 
-uint32_t sb_rand_unique(uint32_t a, uint32_t b)
+uint32_t sb_rand_unique_sharding(uint32_t a, uint32_t b)
 {
   uint32_t index = ck_pr_faa_32(a, b);
 

@@ -64,7 +64,7 @@ function sysbench.rand.unique()
 end
 
 function sysbench.rand.unique_sharding(a, b)
-   return ffi.C.sb_rand_unique(a, b)
+   return ffi.C.sb_rand_unique_sharding(a, b)
 end
 
 function sysbench.rand.string(fmt)
