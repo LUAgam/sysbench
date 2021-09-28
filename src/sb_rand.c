@@ -340,6 +340,17 @@ uint32_t sb_rand_unique(void)
                              0x5bf03635);
 }
 
+
+/* This is safe to be called concurrently from multiple threads */
+
+uint32_t sb_rand_unique(uint32_t a, uint32_t b)
+{
+  uint32_t index = ck_pr_faa_32(a, b);
+
+  return rand_unique_permute((rand_unique_permute(index) + rand_unique_offset) ^
+                             0x5bf03635);
+}
+
 /*
   Implementation of the Zipf distribution is based on
   RejectionInversionZipfSampler.java from the Apache Commons RNG project

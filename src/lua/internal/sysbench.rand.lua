@@ -63,6 +63,10 @@ function sysbench.rand.unique()
    return ffi.C.sb_rand_unique()
 end
 
+function sysbench.rand.unique_sharding(a, b)
+   return ffi.C.sb_rand_unique(a, b)
+end
+
 function sysbench.rand.string(fmt)
    local buflen = #fmt
    local buf = ffi.new("uint8_t[?]", buflen)
