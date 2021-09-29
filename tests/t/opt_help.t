@@ -28,6 +28,8 @@ separately.
     --version[=on|off]              print version and exit [off]
     --config-file=FILENAME          File containing command line options
     --luajit-cmd=STRING             perform LuaJIT control command. This option is equivalent to 'luajit -j'. See LuaJIT documentation for more information
+    --start=STRING             starting value
+    --length=STRING             step size, corresponds to partitionLength in the dble sharding.xml configuration file
   
   Pseudo-Random Numbers Generator options:
     --rand-type=STRING   random numbers distribution {uniform, gaussian, pareto, zipfian} to use by default [uniform]

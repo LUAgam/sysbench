@@ -43,6 +43,7 @@ PRNG Lua API tests
   sysbench.rand.zipfian
   sysbench.rand.default\(0, 99\) = [0-9]{1,2} (re)
   sysbench.rand.unique\(0, 4294967295\) = [0-9]{1,10} (re)
+  sysbench.rand.sb_global_unique_id\(0, 4294967295\) = [0-9]{1,10} (re)
   sysbench.rand.uniform_uint64\(\) = [0-9]+ (re)
   sysbench.rand.string\(".*"\) = abc-[0-9]{3}-[a-z]{3}-xyz (re)
   sysbench.rand.varstring\(1, 23\) = [0-z]{1,23} (re)
