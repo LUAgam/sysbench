@@ -20,6 +20,7 @@ PRNG Lua API tests
   > function event()
   >   print("sysbench.rand.default(0, 99) = " .. sysbench.rand.default(0, 99))
   >   print("sysbench.rand.unique(0, 4294967295) = " .. sysbench.rand.unique(0, 4294967295))
+  >   print("sysbench.rand.sb_global_unique_id(0, 4294967295) = " .. sysbench.rand.sb_global_unique_id(0, 4294967295))
   >   ffi.C.printf("sysbench.rand.uniform_uint64() = %llu\n", sysbench.rand.uniform_uint64())
   >   print([[sysbench.rand.string("abc-###-@@@-xyz") = ]] .. sysbench.rand.string("abc-###-@@@-xyz"))
   >   print([[sysbench.rand.varstring(1, 23) = ]] .. sysbench.rand.varstring(1, 23))
@@ -39,6 +40,7 @@ PRNG Lua API tests
   sysbench.rand.uniform_double
   sysbench.rand.uniform_uint64
   sysbench.rand.unique
+  sysbench.rand.sb_global_unique_id
   sysbench.rand.varstring
   sysbench.rand.zipfian
   sysbench.rand.default\(0, 99\) = [0-9]{1,2} (re)
