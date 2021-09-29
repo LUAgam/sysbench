@@ -35,12 +35,12 @@ PRNG Lua API tests
   sysbench.rand.default
   sysbench.rand.gaussian
   sysbench.rand.pareto
+  sysbench.rand.sb_global_unique_id
   sysbench.rand.string
   sysbench.rand.uniform
   sysbench.rand.uniform_double
   sysbench.rand.uniform_uint64
   sysbench.rand.unique
-  sysbench.rand.sb_global_unique_id
   sysbench.rand.varstring
   sysbench.rand.zipfian
   sysbench.rand.default\(0, 99\) = [0-9]{1,2} (re)
