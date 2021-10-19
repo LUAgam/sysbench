@@ -47,7 +47,7 @@ CREATE TABLE sbtest%d(
     con:query(query)
 
     if (sysbench.opt.table_size > 0) then
-        print(string.format("Inserting %d records into 'table_%d'", sysbench.opt.table_size, table_num))
+        print(string.format("Inserting %d records into 'sbtest%d'", sysbench.opt.table_size, table_num))
     end
 
 
